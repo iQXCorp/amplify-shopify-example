@@ -49,3 +49,4 @@ test/screenshots/*.html
 test/screenshots/*.png
 
 .env
+composer.phar
