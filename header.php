@@ -9,9 +9,10 @@ $dotenv->load();
 
 $access_token = getenv('SHOPIFY_ACCESS_TOKEN');
 $amplify_api_key = getenv('AMPLIFY_API_KEY');
+$store_name = getenv('STORE_NAME');
 
 $shopify = new \Shopify\Client([
-   "shopUrl" => "modern-cargo-cult.myshopify.com",
+   "shopUrl" => $store_name,
    "X-Shopify-Access-Token" => $access_token
 ]);
 
